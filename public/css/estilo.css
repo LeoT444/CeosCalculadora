@@ -1,0 +1,213 @@
+/* ==========================
+   Estilos Gerais
+   ========================== */
+   html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* Faz o conteúdo crescer e empurra o footer para baixo */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================
+   Header (Topo)
+   ========================== */
+.navbar {
+    background: linear-gradient(to right, #1e88e5, #00acc1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+/* Logo "Céos" alinhado à esquerda */
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Menu centralizado */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto; /* Centraliza o menu */
+}
+
+.menu li {
+    position: relative;
+    padding: 10px 15px;
+}
+
+/* Estilo dos links do menu */
+.menu a {
+    text-decoration: none;
+    color: #51a1f7;
+    font-weight: bold;
+    display: block;
+}
+
+/* Submenu dropdown */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    color: #007bff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+}
+
+.submenu a {
+    color: #333;
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+/* Mostra submenu ao passar o mouse */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* ==========================
+   Botões (Entrar e Cadastre-se)
+   ========================== */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons .btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-light {
+    background: white;
+    color: #1e88e5;
+    border: 1px solid #1e88e5;
+}
+.btn-light:hover {
+    background: black;
+    color: #51a1f7;
+}
+
+.btn-dark {
+    background: purple;
+    color: white;
+}
+.btn-dark:hover {
+    background: rgb(228, 5, 228);
+    color: #000000;
+}
+
+/* ==========================
+   Lista de Tarefas
+   ========================== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #e9e9e9;
+}
+
+li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #0056b3;
+}
+
+/* ==========================
+   Botões Gerais
+   ========================== */
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* ==========================
+   Formulários
+   ========================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form input, form label {
+    font-size: 14px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* ==========================
+   Rodapé (Footer) Fixo no Final
+   ========================== */
+.footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
