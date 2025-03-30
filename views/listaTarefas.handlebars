@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Lista de Tarefas</h2>
+    <ul>
+        {{#each tarefas}}
+        <li>
+            {{descricao}} - {{#if
+            concluida}}Concluída{{else}}Pendente{{/if}}
+            <a href="/tarefas/{{id}}/editar">Editar</a>
+            <a href="/tarefas/{{id}}/excluir">Excluir</a>
+        </li>
+        {{/each}}
+    </ul>
+</div>
