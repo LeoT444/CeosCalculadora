@@ -15,6 +15,7 @@ app.get('/', (req,res)=>{
 app.get('/login', (req,res)=>{
     res.render('login')
 });
+
 app.get('/calculo', (req,res)=>{
     res.render('calculos')
 });
@@ -24,5 +25,5 @@ app.use('/css', express.static('public/css'))
 
 const PORT = 8081;
 app.listen(PORT, () => {
-    console.log("Servidor Ronaldo");
+    console.log("Servidor Rodando");
 });

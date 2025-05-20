@@ -1,54 +1,55 @@
-/* ==========================
-   Estilos Gerais
-   ========================== */
-   /* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
 .container-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
+
 /* Container principal */
-.container,.container2 {
+.container,
+.container2 {
     display: flex;
-    height: 100vh; /* Ocupa a tela toda */
+    height: 100vh;
     width: 90%;
     padding: 50px 10%;
-    flex: 1; /* Faz o conteúdo crescer e empurra o footer para baixo */
+    flex: 1;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.container{
+
+.container {
     background-color: #dddddd;
     align-items: center;
     justify-content: center;
 
 }
-.container2{
+
+.container2 {
     background-color: #007BFF;
     color: white;
     align-items: center;
     justify-content: left;
-     width: 90%; /* Ambos os containers terão a mesma largura */
-      max-width: 1200px; /* Define um limite máximo */
-      padding: 40px;
-     margin: 20px auto;
-     border-radius: 8px;
-     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 
-/* Esquerda */
 .left-section {
     width: 50%;
     padding-right: 40px;
@@ -65,7 +66,6 @@
     color: #444;
 }
 
-/* Cores dos textos */
 .math {
     color: #ff6600;
     font-weight: bold;
@@ -123,7 +123,8 @@
     background: #662d91;
 }
 
-   html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -162,7 +163,8 @@
     display: flex;
     gap: 20px;
     padding: 0;
-    margin: 0 auto; /* Centraliza o menu */
+    margin: 0 auto;
+    /* Centraliza o menu */
 }
 
 .menu li {
@@ -228,6 +230,7 @@
     color: #1e88e5;
     border: 1px solid #1e88e5;
 }
+
 .btn-light:hover {
     background: black;
     color: #51a1f7;
@@ -237,6 +240,7 @@
     background: purple;
     color: white;
 }
+
 .btn-dark:hover {
     background: rgb(228, 5, 228);
     color: #000000;
@@ -301,7 +305,8 @@ form {
     margin-top: 20px;
 }
 
-form input, form label {
+form input,
+form label {
     font-size: 14px;
 }
 
